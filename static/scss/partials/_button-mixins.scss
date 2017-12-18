@@ -1,0 +1,56 @@
+// Normal Button Mixins
+@mixin normal-btn() {
+  @include button-gradient-color($color-pink-gradient-primary-from, $color-pink-gradient-primary-to);
+  @include border-radius(7px);
+  color: $color-white;
+  border: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+// Normal Button Mixins
+@mixin pink-btn() {
+  background: $color-pink-accent-2;
+  @include border-radius(7px);
+  color: $color-white;
+  border: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    color: $color-white;
+  }
+}
+
+// Outline Button Mixins
+@mixin outline-btn() {
+  @include border-radius(7px);
+  background: $color-white;
+  border: 1px solid $color-pink-primary;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: $color-black-primary;
+  &:hover {
+    color: $color-white;
+    background: #f73f80;
+    border: 1px solid #f73f80;
+  }
+}
+
+// Small Outline Button Mixins
+@mixin small-outline-btn() {
+  @include border-radius(10px);
+  background: $color-white;
+  border: 1px solid $color-pink-primary;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 0.1rem;
+  color: $color-black-primary;
+}

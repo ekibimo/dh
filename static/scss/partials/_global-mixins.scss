@@ -1,0 +1,61 @@
+// Placeholder Mixins
+@mixin default-placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+  :-moz-placeholder {
+    color: $color;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+// Border Radius Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Linear Gradient Background Mixins
+@mixin button-gradient-color($from, $to, $direction: left) {
+  background: $from;
+  background: -webkit-linear-gradient($direction, $from , $to);
+  background: -o-linear-gradient($direction, $from, $to);
+  background: -moz-linear-gradient($direction, $from, $to);
+  background: linear-gradient(to $direction, $from, $to);
+}
+
+// Input Mixins
+@mixin outline-input($color) {
+  border: 1px solid $color;
+  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// Social Media Footer Links Icon
+@mixin social-media-circle() {
+  @include border-radius(50%);
+  background: $color-pink-primary;
+  color: $color-white;
+  padding: 7px 9px;
+}
+
+@mixin box-shadow() {
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
+}

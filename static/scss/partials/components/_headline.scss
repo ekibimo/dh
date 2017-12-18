@@ -1,0 +1,97 @@
+.dh-headline {
+  &__wrapper {
+    margin: 4rem 0;
+  }
+  &__card {
+    padding: 0 2rem;
+  }
+  &__card-content {
+    position: relative;
+    box-sizing: border-box;
+    background: $color-white;
+    @include box-shadow;
+    .card-heading {
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-family: 'Geomanist-Bold';
+        letter-spacing: 1px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+      }
+      .bullet-position {
+        span {
+          display: inline-block;
+          height: 8px;
+          width: 8px;
+          background: $color-black-accent-1;
+          cursor: pointer;
+          @include border-radius(50%);
+          margin-right: 6px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &.active {
+            background: $color-pink-primary;
+          }
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      right:0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      .owl-prev, .owl-next {
+        background: rgba(0,0,0,0.5);
+        width: 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        @include border-radius(50%);
+        i {
+          position: relative;
+          bottom: 1px;
+          color: rgba(255,255,255,0.8);
+          font-size: 1.1rem;
+        }
+      }
+      .owl-prev {
+        i {
+          right: 1px;
+        }
+      }
+      .owl-next {
+        i {
+          left: 1px;
+        }
+      }
+    }
+    .card-content {
+      padding: 1rem 2rem;
+      color: $color-black-accent-3;
+      h4 {
+        margin: 0;
+        margin-bottom: 2rem;
+        font-family: 'Roboto';
+      }
+      span {
+        &.author {
+          color: $color-pink-accent-1;
+          font-size: 0.9em;
+          font-weight: 700;
+        }
+        &.date {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}

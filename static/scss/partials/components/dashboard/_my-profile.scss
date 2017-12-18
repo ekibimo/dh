@@ -1,0 +1,65 @@
+.dh-dashboard {
+  &__myprofile {
+    background: $color-white;
+    padding: 3rem 5rem 3rem 3rem;
+    @include box-shadow;
+    @include default-placeholder($color-pink-accent-2);
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: 5px;
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+    }
+    .myprofile-list {
+      .disclaimer {
+        display: block;
+        margin-top: 5rem;
+        color: $color-sidenav-primary;
+        span {
+          color: $color-pink-accent-2;
+        }
+      }
+      .myprofile-image {
+        text-align: center;
+        margin-bottom: 2rem;
+        img {
+          width: 150px;
+        }
+      }
+      .form-horizontal {
+        label {
+          padding-left: 3rem;
+          text-align: left;
+          font-size: 1.3rem;
+        }
+        input {
+          border: none;
+          box-shadow: none;
+          border-bottom: 1px solid $color-pink-accent-2;
+          border-radius: 0;
+          color: $color-pink-accent-2;
+          font-size: 1.5rem;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}

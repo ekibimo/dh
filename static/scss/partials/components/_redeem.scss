@@ -1,0 +1,68 @@
+.dh-redeemproduct {
+  &__wrapper {
+    padding: 2rem 0;
+    margin: 4rem 0;
+    background: $color-white;
+  }
+}
+
+.dh-redeemproductlist {
+  &__list {
+    padding: 0 2rem;
+    h4 {
+      color: $color-black-accent-2;
+      margin: 0;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      font-size: 11pt;
+      letter-spacing: 1px;
+      font-family: 'Geomanist-Bold', sans-serif;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        text-align: center;
+        position: relative;
+        a {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          transition: 0.3s all;
+          color: $color-black-primary;
+          &:hover {
+            text-decoration: none;
+          }
+          .product-detail {
+            margin-top: 1.2rem;
+            p {
+              margin: 0;
+              font-size: 8pt;
+              padding: 0;
+              font-family: 'Roboto', sans-serif;
+              &.name {
+                font-size: 9pt;
+              }
+              &.brand {
+                color: $color-black-accent-3;
+              }
+              &.point {
+                color: $color-pink-additional;
+                font-size: 10pt;
+              }
+            }
+            small {
+              font-size: 6pt;
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

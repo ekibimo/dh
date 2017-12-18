@@ -1,0 +1,84 @@
+.dh-sidemenu {
+  &__recomendation {
+    background: $color-white;
+    text-align: center;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 3rem 1rem 2rem 1rem;
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+      }
+    }
+    .btn-normal {
+      @include small-outline-btn;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .recomendation-list {
+      padding: 0 1rem;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          padding: 1rem;
+          border-bottom: 1px solid $color-pink-accent-4;
+          text-decoration: none;
+          text-align: left;
+          .recomendation-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .recomendation-profile {
+              display: flex;
+              align-items: center;
+            }
+            .item {
+              img {
+                @include border-radius(50%);
+                margin-right: 1.5rem;
+                width: 60px;
+              }
+              span {
+                display: block;
+                &.username {
+                  color: #000;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                }
+                &.area {
+                  color: $color-sidenav-primary;
+                  font-size: 1.2rem;
+                }
+              }
+              a {
+                display: block;
+                background: $color-sidenav-profile-item;
+                height: 20px;
+                width: 20px;
+                text-align: center;
+                @include border-radius(50%);
+                transition: 0.2s all ease-in;
+                &:hover {
+                  transform: scale(1.1,1.1);
+                }
+                i {
+                  position: relative;
+                  top: -1px;
+                  font-size: 1rem;
+                  color: $color-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

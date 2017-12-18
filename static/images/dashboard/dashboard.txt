@@ -1,0 +1,5 @@
+profil cover
+color background box follower, following, post : #f487ac
+
+search box cari teman
+color background : #fdd5e3

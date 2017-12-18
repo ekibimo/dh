@@ -1,0 +1,188 @@
+.dh-dashboard {
+  &__container {
+    .modal-content {
+      position: relative;
+      .message-content {
+        padding: 3rem 4rem;
+        .message-post {
+          display: flex;
+          align-items: flex-start;
+        }
+        .message-reply {
+          margin-top: 5rem;
+          h4 {
+            letter-spacing: 3px;
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+          }
+          form {
+            textarea {
+              border: 1px solid $color-pink-accent-3;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+      .message-comment {
+        background: #fafafa;
+        .title {
+          margin: 0;
+          letter-spacing: 3px;
+          font-size: 2rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          padding: 3rem 4rem 2rem 4rem;
+        }
+        .message-post {
+          padding: 2rem 4rem;
+          border-bottom: 1px solid #eee;
+          display: flex;
+          align-items: flex-start;
+        }
+      }
+      .load-more {
+        text-align: center;
+        padding: 4rem;
+        .btn-normal {
+          text-transform: uppercase;
+          font-size: 1.2rem;
+        }
+      }
+      .close-button {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background: $color-pink-accent-2;
+        color: $color-white; 
+        @include border-radius(50%);
+        cursor: pointer;
+        span {
+          display: block;
+          width: 40px;
+          height: 40px;
+          i {
+            position: relative;
+            left: 8px;
+            top: 4px;
+            font-size: 3rem;
+          }
+        }
+      }
+      .item {
+        img {
+          @include border-radius(50%);
+          margin-right: 3rem;
+          width: 60px;
+        }
+        span {
+          &.message-alert {
+            display: block;
+            color: $color-sidenav-primary;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+        h4 {
+          margin: 0;
+          margin-top: 0.5rem;
+          font-size: 1.5rem;
+          line-height: 1.3;
+        }
+        span {
+          &.author {
+            color: $color-pink-accent-1;
+            font-size: 0.9em;
+            font-weight: 700;
+          }
+          &.date {
+            font-size: 0.9em;
+            color: $color-black-accent-2;
+          }
+        }
+      }
+    }
+  }
+  &__message {
+    background: $color-white;
+    padding: 3rem;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .message-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          padding: 1rem;
+          border-bottom: 1px solid $color-pink-accent-4;
+          text-decoration: none;
+          text-align: left;
+          .message-content {
+            padding: 1rem 0;
+            .message-post {
+              display: flex;
+              align-items: center;
+            }
+            .item {
+              img {
+                @include border-radius(50%);
+                margin-right: 3rem;
+                width: 60px;
+              }
+              a {
+                text-decoration: none;
+                cursor: pointer;
+              }
+              span {
+                &.message-alert {
+                  display: block;
+                  color: $color-sidenav-primary;
+                  font-size: 1.2rem;
+                  margin-bottom: 0.5rem;
+                }
+              }
+              p {
+                margin: 0;
+                line-height: 1.6;
+                span {
+                  &.username {
+                    color: $color-sidenav-profile-item;
+                    font-weight: 700;
+                    span {
+                      color: $color-sidenav-primary;
+                    }
+                  }
+                  &.message-date {
+                    font-size: 1.2rem;
+                    color: $color-sidenav-primary;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

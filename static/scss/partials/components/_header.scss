@@ -1,0 +1,83 @@
+.dh-header {
+  &__wrapper {
+    background: $color-white;
+    .dh-navigation {
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+      &-logo-wrapper {
+        padding: 1rem 2rem 4rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-links {
+        padding: 0 2rem;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        li {
+          a {
+            font-family: 'Geomanist-Bold', sans-serif;
+            color: $color-black-primary;
+            text-transform: uppercase;
+            margin-right: 3rem;
+            letter-spacing: 0.1rem;
+            &:hover, &.active {
+              color: $color-pink-primary;
+              text-decoration: none;
+            }
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dh-header {
+  padding: 1rem 0;
+  border-bottom: 1px solid $color-pink-accent-3;
+  &-container {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-item {
+    .search-input {
+      position: relative;
+    }
+    .form-group {
+      margin-bottom: 0;
+      input {
+        padding-left: 3rem;
+        @include outline-input($color-pink-accent-3);
+      }
+      span {
+        position: absolute;
+        top: 6px;
+        left: 10px;
+        color: $color-pink-accent-2;
+      }
+    }
+    a {
+      margin-right: 2rem;
+      color: $color-black-primary;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .normal-btn {
+      @include normal-btn;
+    }
+  }
+  @include default-placeholder($color-default-placeholder);
+}

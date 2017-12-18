@@ -1,0 +1,70 @@
+// Global reusable variables and mixins
+@import './partials/_variables';
+@import './partials/_global-mixins';
+@import './partials/_button-mixins';
+@import './partials/_fonts-mixins';
+
+// Main site components
+@import './partials/components/_header';
+@import './partials/components/_footer';
+@import './partials/components/_slider';
+@import './partials/components/_headline';
+@import './partials/components/_newmember';
+@import './partials/components/_contest';
+@import './partials/components/_redeem';
+@import './partials/components/_topmember';
+@import './partials/components/_channel';
+@import './partials/components/_komunitas';
+@import './partials/components/_join';
+@import './partials/components/_mixmatch';
+
+// Dashboard components
+@import './partials/components/_dashboard';
+@import './partials/components/_mywall';
+@import './partials/components/dashboard/_timeline';
+@import './partials/components/dashboard/_gallery';
+@import './partials/components/dashboard/_notification';
+@import './partials/components/dashboard/_message';
+@import './partials/components/dashboard/_my-profile';
+@import './partials/components/dashboard/_change-password';
+@import './partials/components/dashboard/_public-profile';
+@import './partials/components/dashboard/_my-friend';
+
+// Dashboard sidemenu components
+@import './partials/components/_dashboardsidemenu';
+@import './partials/components/_dashboardprofile';
+@import './partials/components/_dashboardrecommendation';
+
+// Register login popup
+@import './partials/components/_register-login-popup';
+
+// Global styling
+body {
+  background: $color-pink-accent-4;
+}
+
+h1,h2,h3,h4,h5,h6,a {
+  font-family: 'Roboto', sans-serif;
+}
+
+// Button custom styling
+.btn-normal {
+  @include outline-btn;
+}
+
+.btn-gradient {
+  @include normal-btn;
+}
+
+.btn-pink {
+  @include pink-btn;
+}
+
+// Badge custom
+.badge-notification {
+  background: $color-badge-notification;
+}
+
+.badge-message {
+  background: $color-badge-message;
+}

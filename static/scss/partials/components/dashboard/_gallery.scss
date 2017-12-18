@@ -1,0 +1,66 @@
+.dh-dashboard {
+  &__container {
+    .modal-content {
+      position: relative;
+      .gallery-content-popup {
+        background: $color-white;
+        padding: 4rem 5rem;
+        img {
+          margin-bottom: 2rem;
+        }
+      }
+      .close-button {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        background: $color-pink-accent-2;
+        color: $color-white; 
+        @include border-radius(50%);
+        cursor: pointer;
+        span {
+          display: block;
+          width: 40px;
+          height: 40px;
+          i {
+            position: relative;
+            left: 8px;
+            top: 4px;
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  &__mygallery {
+    background: $color-white;
+    padding: 3rem;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .mygallery-list {
+      .mygallery-content {
+        cursor: pointer;
+        img {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

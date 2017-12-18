@@ -1,0 +1,79 @@
+.dh-topmember {
+  &__wrapper {
+    margin: 4rem 0;
+  }
+  &__card {
+    padding: 0 2rem;
+  }
+}
+
+.dh-topcard {
+  &__card-content {
+    box-sizing: border-box;
+    background: $color-white;
+    @include box-shadow;
+    .card-heading {
+      padding: 2rem 2rem 1rem 2rem;
+      h4 {
+        font-family: 'Geomanist-Bold', sans-serif;
+        letter-spacing: 1px;
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+    .card-content {
+      padding: 1rem 2rem;
+      color: $color-black-accent-3;
+      .profile-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid $color-pink-accent-4;
+        transition: 0.3s all;
+        &:hover {
+          background: $color-pink-accent-2;
+          .profile, .point {
+            p, span {
+              color: $color-white;
+            }
+          }
+        }
+      }
+      .profile, .point {
+        p {
+          margin: 0;
+          font-weight: 700;
+        }
+        span {
+          font-size: 1.1rem;
+        }
+      }
+      .profile {
+        display: flex;
+        .numbering {
+          span {
+            display: block;
+            text-align: center;
+            padding-top: 3px;
+            margin-right: 2rem;
+            background: $color-pink-additional;
+            height: 20px;
+            width: 20px;
+            color: $color-white;
+            @include border-radius(50%);
+          }
+        }
+        p {
+          color: $color-black-primary;
+        }
+      }
+      .point {
+        p {
+          color: $color-pink-additional;
+        }
+      }
+    }
+  }
+}

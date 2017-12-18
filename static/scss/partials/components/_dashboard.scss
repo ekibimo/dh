@@ -1,0 +1,19 @@
+.dh-dashboard {
+  &__container {
+    margin: 3rem 0;
+  }
+  &__content {
+    .menu-heading {
+      @include button-gradient-color($color-white, $color-sidenav-profile-primary, bottom left);
+      @include box-shadow;
+      h4 {
+        margin: 0;
+        padding: 4rem 2rem 1rem 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

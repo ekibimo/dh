@@ -1,0 +1,56 @@
+.dh-sidemenu {
+  &__profile {
+    @include box-shadow;
+    @include button-gradient-color($color-sidenav-profile-primary, $color-white, bottom left);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    .profile-image {
+      img {
+        width: 90px;
+        @include border-radius(50%);
+        margin-bottom: 2rem;
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+        color: $color-default-placeholder
+      }
+    }
+    .profile-detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .item {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0.8rem;
+        background: $color-sidenav-profile-item;
+        width: 50%;
+        color: $color-white;
+        @include border-radius(10px);
+        span {
+          font-size: 2rem;
+        }
+        p {
+          padding: 0;
+          margin: 0;
+          font-size: 1.1rem;
+        }
+        & +.edit-profile {
+          background: $color-white;
+          span, p {
+            color: $color-sidenav-primary;
+          }
+        }
+      }
+    }
+  }
+}

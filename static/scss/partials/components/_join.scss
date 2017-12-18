@@ -1,0 +1,81 @@
+.dh-join {
+  &__wrapper {
+    // padding: 2rem 0;
+    background: $color-white;
+  }
+  &__content {
+    padding: 0 2rem;
+    display: flex;
+    .join-headline {
+      padding: 3rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url('../../static/images/bergabung/siluet.png');
+      background-size: cover;
+      width: 68.5%;
+      .total {
+        display: flex;
+        align-items: center;
+        h2,h4 {
+          margin: 0;
+        }
+        h2 {
+          color: $color-pink-accent-1;
+          font-size: 6rem;
+          margin-right: 4rem;
+          font-family: 'Geomanist-Light';
+        }
+        h4 {
+          font-family: 'Roboto';
+        }
+      }
+      .register-button {
+        button {
+          text-transform: uppercase;
+          font-family: 'Geomanist-Bold';
+        }
+      }
+    }
+    .join-register-form {
+      padding: 2rem;
+      h3 {
+        margin: 0;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        span {
+          color: #f73f80;
+        }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        .form-group {
+          margin: 0;
+          &:first-child {
+            margin-right: 2rem;
+          }
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid #f83e7f;
+          box-shadow: none;
+          background: transparent;
+          text-align: center;
+          border-radius: 0;
+        }
+        button {
+          font-size: 1.2rem;
+          padding: 0.3rem 2rem;
+          position: relative;
+          top: 5px;
+          text-transform: uppercase;
+          font-family: 'Geomanist-Bold';
+        }
+      }
+    }
+  }
+}

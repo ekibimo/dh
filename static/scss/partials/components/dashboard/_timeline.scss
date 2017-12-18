@@ -1,0 +1,86 @@
+.dh-dashboard {
+  &__timeline {
+    background: $color-white;
+    padding: 3rem;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .timeline-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          padding: 1rem;
+          border-bottom: 1px solid $color-pink-accent-4;
+          text-decoration: none;
+          text-align: left;
+          .timeline-content {
+            padding: 1rem 0;
+            .timeline-post {
+              display: flex;
+            }
+            .item {
+              img {
+                &.author { 
+                  @include border-radius(50%);
+                  margin-right: 3rem;
+                  width: 60px;
+                }
+                &.image-post {
+                  width: 200px;
+                  margin-bottom: 1rem;
+                }
+              }
+              p {
+                margin: 0;
+                margin-bottom: 0.8rem;
+              }
+              span {
+                &.username {
+                  display: block;
+                  color: $color-sidenav-profile-item;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5rem;
+                  span {
+                    color: $color-sidenav-primary;
+                  }
+                }
+                &.comment {
+                  color: $color-sidenav-profile-item;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin-right: 1.5rem;
+                }
+                &.like {
+                  color: $color-sidenav-profile-item;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

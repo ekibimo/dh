@@ -1,0 +1,112 @@
+.dh-dashboard {
+  &__myfriend {
+    background: $color-white;
+    padding: 3rem;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .search-friend-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 2rem 3rem;
+      background: $color-pink-accent-2;
+      margin-bottom: 2rem;
+      form {
+        width: 50%;
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0;
+        }
+        .form-group {
+          position: relative;
+          margin: 0;
+          input {
+            padding-left: 3rem;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+          }
+        }
+        span {
+          position: absolute;
+          top: 0.7rem;
+          left: 1rem;
+          i {
+            color: $color-pink-primary;
+          }
+        }
+      }
+    }
+    .friend-profile-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid $color-pink-accent-2;
+      .profile {
+        display: flex;
+        align-items: center;
+        .image {
+          margin-right: 2rem;
+          img {
+            width: 70px;
+          }
+        }
+        .detail {
+          h5 {
+            margin: 0;
+            font-weight: 700;
+          }
+          span {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .action {
+        text-align: center;
+        a {
+          position: relative;
+          display: block;
+          color: $color-pink-accent-2;
+          margin-bottom: 0.5rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &.close {
+            color: #eee;
+            width: 20px;
+            height: 20px;
+            background: black;
+            @include border-radius(50%);
+            i {
+              font-size: 1.3rem;
+              position: relative;
+              top: -3px;
+            }
+          }
+          i {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

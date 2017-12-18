@@ -1,0 +1,132 @@
+.dh-contest {
+  &__wrapper {
+    margin: 4rem 0;
+  }
+  &__card {
+    padding: 0 2rem;
+  }
+}
+
+.dh-contestcard {
+  &__card-content {
+    box-sizing: border-box;
+    background: $color-white;
+    @include box-shadow;
+    .card-heading {
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-family: 'Geomanist-Bold', sans-serif;
+        letter-spacing: 1px;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+      .bullet-position {
+        span {
+          display: inline-block;
+          height: 8px;
+          width: 8px;
+          background: $color-black-accent-1;
+          @include border-radius(50%);
+          cursor: pointer;
+          margin-right: 6px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &.active {
+            background: $color-pink-primary;
+          }
+        }
+      }
+    }
+    .card-content {
+      padding: 1rem 2rem;
+      color: $color-black-accent-3;
+      h4 {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+      span {
+        &.author {
+          color: $color-pink-accent-1;
+          font-size: 0.9em;
+          font-weight: 700;
+        }
+        &.date {
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+.contestant-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .contestant {
+    text-align: center;
+    margin-right: 2rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      display: table;
+      margin: 0 auto;
+      width: 80px !important;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0;
+      color: $color-black-primary;
+      font-weight: 700;
+    }
+    span {
+      font-size: 1rem;
+    }
+    label {
+      display: block;
+      color: $color-pink-accent-3;
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    .owl-prev, .owl-next {
+      position: relative;
+      background: rgba(0,0,0,0.3);
+      width: 20px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      @include border-radius(50%);
+      i {
+        position: relative;
+        bottom: 1px;
+        color: rgba(255,255,255,0.8);
+        font-size: 1.1rem;
+      }
+    }
+    .owl-prev {
+      left: -15px;
+      i {
+        right: 1px;
+      }
+    }
+    .owl-next {
+      right: -15px;
+      i {
+        left: 1px;
+      }
+    }
+  }
+}

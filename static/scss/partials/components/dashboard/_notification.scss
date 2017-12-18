@@ -1,0 +1,70 @@
+.dh-dashboard {
+  &__notification {
+    background: $color-white;
+    padding: 3rem;
+    @include box-shadow;
+    h4 {
+      &.heading {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+    }
+    .btn-more {
+      text-align: center;
+      .btn-normal {
+        @include small-outline-btn;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+    }
+    .notification-list {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: block;
+          padding: 1rem;
+          border-bottom: 1px solid $color-pink-accent-4;
+          text-decoration: none;
+          text-align: left;
+          .notification-content {
+            padding: 1rem 0;
+            .notification-post {
+              display: flex;
+              align-items: center;
+            }
+            .item {
+              img {
+                @include border-radius(50%);
+                margin-right: 2.5rem;
+                width: 60px;
+              }
+              p {
+                margin: 0;
+                a {
+                  text-decoration: none;
+                }
+              }
+              span {
+                &.post-date {
+                  color: $color-sidenav-primary;
+                  font-size: 1.2rem;
+                }
+                &.username {
+                  color: $color-sidenav-profile-item;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

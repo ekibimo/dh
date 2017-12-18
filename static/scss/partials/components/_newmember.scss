@@ -1,0 +1,73 @@
+.dh-newmember {
+  &__wrapper {
+    padding: 2rem 0;
+    margin: 4rem 0;
+    background: $color-white;
+  }
+  &__list {
+    padding: 0 2rem;
+    h4 {
+      // color: $color-black-accent-2;
+      margin: 0;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      font-size: 11pt;
+      letter-spacing: 1px;
+      font-family: 'Geomanist-Bold', sans-serif;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        text-align: center;
+        position: relative;
+        margin-right: 3rem;
+        a {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          transition: 0.3s all;
+          &:hover {
+            transition: 0.3s all;
+            .profile-detail {
+              display: block;
+            }
+          }
+          .profile-detail {
+            display: none;
+            position: absolute;
+            top: -8.5rem;
+            left: -2rem;
+            background-image: url('../../static/images/user/bubble.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 160%;
+            color: $color-white;
+            box-sizing: border-box;
+            padding: 1rem 1rem 2rem 2rem;
+            text-align: left !important;
+            transition: 0.3s all;
+            p {
+              margin: 0;
+              font-size: 8pt;
+              padding: 0;
+              &.name {
+                font-size: 10pt;
+                letter-spacing: 1px;
+              }
+            }
+            small {
+              font-size: 6pt;
+            }
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
